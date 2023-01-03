@@ -1,0 +1,33 @@
+#titlebar{width:100vw;height:15px;-webkit-app-region:drag;display:flex;align-items:flex-start;justify-content:flex-end;background:black}
+.titlebar{height:15px;width:15px;-webkit-app-region:no-drag;cursor:pointer;display:flex}
+.titlebar:hover{opacity:100%}
+body{background:#202020;font-size:10px;color:white;font-family:consolas;height:100vh;width:100vw}
+*{margin:0;overflow:hidden;white-space:nowrap;overflow-x:hidden}
+* p{display:flex;user-select:none}
+.resize{position:absolute;resize:horizontal;height:-webkit-fill-available;width:120px;max-width:100vw}
+.empty{height:10px;}
+
+#info{transition:width;transition-duration:1s;transition-delay:0.25s}
+#info:hover{width:40vw}
+
+#graph{height:-webkit-fill-available;position:absolute;right:0;overflow:initial;display:-webkit-box;display:flex}
+.docker{margin:5px;border:1px dotted #ffffff40;height:-webkit-fill-available;width:25%;flex-direction:column;display:flex;flex-wrap:wrap;align-content:flex-start;overflow:initial}
+.docker .panel{border-left:1px solid white;width:inherit;position:relative;left:-6px;margin-top:11px;overflow:initial;flex-direction:column;width:-webkit-fill-available}
+.docker .panel p{margin-left:15px;white-space:pre}
+.panel .title{height:11px;position:absolute;top:-11px;overflow:initial}
+.panel .title p{position:relative;top:-15px;margin-left:5px!important;display:block!important;white-space:nowrap!important}
+.closed p{display:none} .closed svg{transform:rotate(180deg)}
+#graphical *{min-width:fit-content;min-height:fit-content;margin:5px;max-height:-webkit-fill-available}
+
+#access{height:-webkit-fill-available;width:100%;background:#191919;position:absolute;overflow-y:auto}
+#access .case{display:flex;flex-direction:column;width:100vw} 
+.case div{margin-left:10px;cursor:pointer;border-left:1px solid #ffffff40;padding-left:3px}
+.case svg{margin:1px;margin-right:2.5px;place-self:auto}
+
+.menu{position:absolute;background:#191919;height:100px;width:55px;z-index:1;display:flex;justify-content:center}
+
+svg{place-self:center;stroke-width:0.5px}
+::-webkit-scrollbar{width:2px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#ffffff40;border-radius:20%}
+::-webkit-scrollbar-thumb:hover{background:grey}
